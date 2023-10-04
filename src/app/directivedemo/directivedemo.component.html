@@ -1,0 +1,49 @@
+<div>
+    <div class="row">
+        <div class="col">
+            <h2>Categories</h2>
+            <ol>
+                <li *ngFor="let item of categories">{{item}}</li>
+            </ol>
+        </div>
+        <div class="col">
+            <h2>Select Categories</h2>
+            <select>
+                <option [value]="item" *ngFor="let item of categories">{{item}}</option>
+            </select>
+        </div>
+        <div class="col">
+            <table class="table table-hover table-dark">
+               <thead>
+                <tr>
+                    <th>Categories</th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                    <td *ngFor="let item of categories">{{item}}</td>
+                </tr>
+               </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <h2>Navbar</h2>
+            <ul>
+                <li *ngFor="let item of categories">
+                    <a href="#">{{item}}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <button *ngFor="let item of categories">{{item}}</button>
+        </div>
+        <div class="col">
+            <h2>Select Categories</h2>
+            <ul>
+                <li *ngFor="let item of categories">
+                    <input type="checkbox"><label>{{item}}</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

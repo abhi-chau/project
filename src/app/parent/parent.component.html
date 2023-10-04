@@ -1,0 +1,11 @@
+<div>
+    <p>{{msgFromChild}}</p>
+    <div>
+        Name:{{obj.Name}} <br>
+        Price:{{obj.Price}}
+    </div>
+    <h2>Parent Component <button (click)="SendClick()">Send Msg to Child</button></h2>
+    <app-child [MsgFromParent]="msg" [ProductsDetails]="product" (ChildComponentChange)="CollectObject($event)" (ChildComponentClick)="CollectMsg($event)"></app-child>
+</div>
+
+

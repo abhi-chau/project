@@ -1,0 +1,7 @@
+.invalid-style{
+    background-color: rgb(253, 202, 202);
+    padding: 10px;
+}
+.valid-style{
+    background-color: rgb(198, 248, 198);
+}
